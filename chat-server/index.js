@@ -219,12 +219,12 @@ app.get('/stats', (req, res) => {
   });
 });
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 8080;
 
 server.listen(PORT, () => {
-  console.log(`🚀 Servidor de chat corriendo en puerto ${PORT}`);
-  console.log(`📱 Cliente disponible en: http://localhost:3000`);
-  console.log(`🔌 WebSocket disponible en: ws://localhost:${PORT}`);
+ console.log(`🚀 Servidor de chat corriendo en puerto ${PORT}`);
+  console.log(`🖥️ Cliente disponible en: http://localhost:3000`);
+  console.log(`🔗 WebSocket disponible en: ws://localhost:${PORT}`);
   console.log(`📊 Estadísticas en: http://localhost:${PORT}/stats`);
 });
 

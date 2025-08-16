@@ -138,7 +138,7 @@ export const ChatProvider = ({ children }) => {
     let socket;
     
     try {
-      socket = io('http://localhost:3001', {
+      socket = io('http://localhost:8080', {
         timeout: 5000,
         reconnection: true,
         reconnectionAttempts: 5,
